@@ -1,0 +1,40 @@
+:root {
+    --background: #ffffff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #ffffff;
+  }
+  
+  [data-theme-mode="dark"] {
+    --background: #000000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+  }
+
+  .light-dark-mode {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background);
+    font-size: 20px;
+    transition: all 0.25s;
+  }
+
+  .light-dark-mode .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-primary);
+    gap: 15px;
+  }
+
+  .light-dark-mode .wrapper button {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
